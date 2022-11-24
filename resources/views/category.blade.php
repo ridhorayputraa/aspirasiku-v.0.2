@@ -37,15 +37,17 @@
             <a class="btn btn-secondary my-2" href="/createmessage">Create Aspiration!</a>
             <h4 class="my-3">Tags</h4>
                 <div class="border align-center">
-                    <p>All tag</p>
+                  <a href="/"><p>All tag</p></a>
                 </div>
 
+                @foreach ($categories as $category_loop)
                 <div class="border align-center ">
-                    <a href="/">
-                        <p>category</p>
+                    <a href="/{{$category_loop->slug}}">
+                        <p>{{ $category_loop->name }}</p>
                     </a>
 
             </div>
+                @endforeach
 
             </div>
 @endsection

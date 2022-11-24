@@ -40,12 +40,15 @@
                     <p>All tag</p>
                 </div>
 
+                @foreach ($categories as $category)
                 <div class="border align-center ">
-                    <a href="/">
-                        <p>category</p>
+                    <a href="/{{$category->slug}}">
+                        <p>{{ $category->name }}</p>
                     </a>
 
             </div>
+                @endforeach
+
 
             </div>
 @endsection
