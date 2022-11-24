@@ -11,7 +11,7 @@
    <div class="container">
     @yield('container')
    </div>
-
+{{-- tessss --}}
    <section class="main-section pt-5  ">
     @yield('forum')
     @yield('msg')
