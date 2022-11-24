@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MessagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [MessagesController::class, 'index']);
+
+Route::get('/{categories:slug}', [MessagesController::class, 'show']
+
+// cari slug yang slug nya samaa dengan parameter
+// return view('post', [
+//     'title' => 'single post',
+//     'post' => Post::find($slug)
+// ]);
+);

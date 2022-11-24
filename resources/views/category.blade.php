@@ -57,7 +57,7 @@
 @section('msg')
 
 <div class="col-12 col-md-9 ">
-    <h1 class="mb-2">All Tags</h1>
+    <h1 class="mb-2">{{ $category->name }}</h1>
     {{-- for right --}}
 
     {{-- container for aspirasi content --}}
