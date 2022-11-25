@@ -58,7 +58,7 @@
 
 @section('msg')
 
-<div class="col-12 col-md-9 ">
+<div class="col-12 col-md-9 mt-5">
     <h1 class="mb-2">{{ $category->name }}</h1>
     {{-- for right --}}
 
