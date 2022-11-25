@@ -11,7 +11,8 @@ class UsersController extends Controller
 
     public function show(Users $users){
         return view('user', [
-          'datas' => $users,
+            'heading' => $users->name,
+          'datas' => $users->messages,
         //   'categories' => Categories::all(),
         //   'messages' => $categories->messages
         ]);
