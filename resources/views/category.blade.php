@@ -74,7 +74,7 @@
             <div class="border-bottom  border-dark">
 
             </div>
-            <p>excerptttt</p>
+            <p>{{ $msg->excerpt }}</p>
         </div>
         @endforeach
 
