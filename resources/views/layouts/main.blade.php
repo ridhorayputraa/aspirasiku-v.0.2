@@ -9,6 +9,10 @@
 </head>
   <body>
     @include('partials.navbar')
+    <div class="container">
+     @yield('user')
+    </div>
+    
    <div class="container-fluid section">
     @yield('container')
    </div>

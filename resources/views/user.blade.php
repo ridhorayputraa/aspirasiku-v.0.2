@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('container')
+@section('user')
 
 <div class="container mt-5">
 
