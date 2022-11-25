@@ -26,10 +26,4 @@ class MessagesController extends Controller
         ]);
     }
 
-    public function user(Users $users){
-        return view('user', [
-           'heading' => $users->name,
-           'datas' => $users->messages
-        ]);
-    }
 }
