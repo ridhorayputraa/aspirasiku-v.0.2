@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Messages;
+use App\Models\Users;
 use Illuminate\Http\Request;
 
 class MessagesController extends Controller
@@ -22,6 +23,13 @@ class MessagesController extends Controller
           'category' => $categories,
           'categories' => Categories::all(),
           'messages' => $categories->messages
+        ]);
+    }
+
+    public function user(Users $users){
+        return view('user', [
+           'heading' => $users->name,
+           'datas' => $users->messages
         ]);
     }
 }
