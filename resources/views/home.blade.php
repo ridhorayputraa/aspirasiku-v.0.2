@@ -70,7 +70,7 @@
 
         <div class="container my-4 main-message border">
             <p>{{ $msg->title }}</p>
-            <p>username</p>
+            <a href="{{ $msg->users->username }}"><p>{{ $msg->users->name }}</p></a>
             <p><a href="/{{ $msg->categories->slug }}"> {{ $msg->categories->name }}</a></p>
             <div class="border-bottom  border-dark">
 

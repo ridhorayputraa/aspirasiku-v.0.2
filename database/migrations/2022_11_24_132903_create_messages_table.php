@@ -16,7 +16,7 @@ class CreateMessagesTable extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->foreignId('categories_id');
-            $table->foreignId('user_id');
+            $table->foreignId('users_id');
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('excerpt');

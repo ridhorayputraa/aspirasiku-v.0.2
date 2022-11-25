@@ -14,4 +14,8 @@ class Messages extends Model
     public function categories(){
         return $this->belongsTo(Categories::class);
     }
+
+    public function users(){
+        return $this->belongsTo(Users::class);
+    }
 }

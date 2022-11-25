@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Messages;
 use App\Models\Categories;
+use App\Models\Users;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        Users::factory(3)->create();
 
         Messages::factory(20)->create();
 
