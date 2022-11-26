@@ -6,7 +6,7 @@
 
 <section class="hero pt-5 section">
     <div class="container">
-        <div class="row">
+        <div class="row pt-5 " >
             <div class="col-12 col-md-6 align-self-center">
                 <h1 class="mb-3">Selamat Datang di Aspirasiku</h1>
                 <p class="mb-3">Gabung Sekarang untuk menyalurkan aspirasi</p>
