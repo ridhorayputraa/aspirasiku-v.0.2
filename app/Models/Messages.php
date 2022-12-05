@@ -20,6 +20,11 @@ class Messages extends Model
         return $this->belongsTo(Categories::class);
     }
 
+
+    public function comments(){
+        return $this->hasMany(Comments::class);
+    }
+
     public function users(){
         return $this->belongsTo(Users::class);
     }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Messages;
 use App\Models\Categories;
+use App\Models\Comments;
 use App\Models\Users;
 use Illuminate\Database\Seeder;
 
@@ -20,6 +21,9 @@ class DatabaseSeeder extends Seeder
         Users::factory(3)->create();
 
         Messages::factory(20)->create();
+
+        Comments::factory(50)->create();
+
 
         Categories::create([
             'name' => 'Usulan',
