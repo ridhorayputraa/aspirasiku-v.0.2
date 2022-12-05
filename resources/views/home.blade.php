@@ -35,20 +35,9 @@
             </form>
 
             <a class="btn btn-secondary my-2" href="/createmessage">Create Aspiration!</a>
-            <h4 class="my-3">Tags</h4>
-                <div class="border align-center">
-                    <p>All tag</p>
-                </div>
 
-                @foreach ($categories as $category)
-                <div class="border align-center ">
-                    <a href="/{{$category->slug}}">
-                        <p>{{ $category->name }}</p>
-                    </a>
-
-            </div>
-                @endforeach
-
+            {{-- tags --}}
+              @include('partials.tags')
 
             </div>
 @endsection
