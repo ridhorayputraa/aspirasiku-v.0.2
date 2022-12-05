@@ -18,6 +18,9 @@
     color: red;
 }
 
+.notclick{
+color: #818181;
+}
 .btn-primary:hover{
 
     background-color: #494747;

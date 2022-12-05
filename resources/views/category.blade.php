@@ -35,7 +35,7 @@
             </form>
 
             <a class="btn btn-secondary my-2" href="/createmessage">Create Aspiration!</a>
-            <h4 class="my-3">Tags</h4>
+          
 
             @include('partials.tags')
 
