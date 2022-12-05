@@ -11,6 +11,7 @@ class Messages extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
+    // eager loading
     protected $with = ['categories', 'users'];
 
 
