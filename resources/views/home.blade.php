@@ -76,6 +76,7 @@
 
             </div>
             <p>{{ $msg->excerpt }}</p>
+            <p><a href="/">Click to see the comments</a> </p>
         </div>
         @endforeach
 
