@@ -11,6 +11,10 @@ class Messages extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
+    protected $with = ['categories', 'users'];
+
+
+
     public function categories(){
         return $this->belongsTo(Categories::class);
     }
