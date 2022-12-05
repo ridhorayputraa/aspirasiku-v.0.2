@@ -14,6 +14,10 @@
     font-size: 19px;
 }
 
+.click{
+    color: red;
+}
+
 .btn-primary:hover{
 
     background-color: #494747;
