@@ -61,6 +61,9 @@
     {{-- container for aspirasi content --}}
     <div class="row container ">
 
+        @if ($messages->count())
+
+
         @foreach ($messages as $msg)
 
         <div class="container my-4 main-message border">
@@ -74,8 +77,13 @@
             <p><a href="/">Click to see the comments</a> </p>
         </div>
         @endforeach
+        @else
+        <p class="text-center fs-4">Upsss there is no messages.</p>
+        @endif
 
     </div>
+
+
 </div>
 </div>
 </div>
