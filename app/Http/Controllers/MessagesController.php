@@ -12,13 +12,13 @@ class MessagesController extends Controller
     //
     public function index(){
 
-        dd(request('search'));
+
 
 
      return view('home', [
         'active' => 'home',
           'title' => 'Messages',
-          'messages' => Messages::all(),
+          'messages' => Messages::latest()->filters(request(['search']))->get(),
           'categories' => Categories::all()
      ]);
     }

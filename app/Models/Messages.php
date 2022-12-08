@@ -15,6 +15,13 @@ class Messages extends Model
     protected $with = ['categories', 'users'];
 
 
+    public function scopeFilters($query, array $filters){
+        $query->when($filters['search'] ?? false, function($query, $search){
+            return $query->where('title', 'like' , '%' . $search . '%')
+            ->orWhere('title', 'like' , '%' . $search . '%');
+        });
+    }
+
 
     public function categories(){
         return $this->belongsTo(Categories::class);
