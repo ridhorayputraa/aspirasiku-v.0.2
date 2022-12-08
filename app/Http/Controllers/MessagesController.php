@@ -11,6 +11,10 @@ class MessagesController extends Controller
 {
     //
     public function index(){
+
+        dd(request('search'));
+
+
      return view('home', [
         'active' => 'home',
           'title' => 'Messages',

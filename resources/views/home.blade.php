@@ -27,10 +27,13 @@
         <div class="col-12 col-md-3">
             <h1 class="mb-3">Forum</h1>
             {{-- for left components --}}
-            <form action="/posts">
+
+
+            <form action="/">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search..." name="search"
                         value="{{ request('search') }}">
+                        <button class="btn btn-danger" type="submit" >Search</button>
                 </div>
             </form>
 
@@ -49,7 +52,10 @@
 @section('msg')
 
 <div class="col-12 col-md-9  mt-5">
+
+
     <h1 class="mb-2">All Tags</h1>
+
     {{-- for right --}}
 
     {{-- container for aspirasi content --}}

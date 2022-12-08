@@ -35,7 +35,7 @@
             </form>
 
             <a class="btn btn-secondary my-2" href="/createmessage">Create Aspiration!</a>
-          
+
 
             @include('partials.tags')
 
@@ -65,6 +65,7 @@
 
             </div>
             <p>{{ $msg->excerpt }}</p>
+            <p><a href="/">Click to see the comments</a> </p>
         </div>
         @endforeach
 
