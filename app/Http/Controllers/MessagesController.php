@@ -12,13 +12,17 @@ class MessagesController extends Controller
     //
     public function index(){
 
-
+      $active = 'home';
+      if(request('category')){
+          $category = Categories::firstWhere('slug', request('category'));
+          $active =  $category->slug;
+      }
 
 
      return view('home', [
-        'active' => 'home',
+        'active' => $active,
           'title' => 'Messages',
-          'messages' => Messages::latest()->filters(request(['search']))->get(),
+          'messages' => Messages::latest()->filters(request(['search', 'category']))->get(),
           'categories' => Categories::all()
      ]);
     }

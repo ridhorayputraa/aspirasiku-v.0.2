@@ -20,7 +20,15 @@ class Messages extends Model
             return $query->where('title', 'like' , '%' . $search . '%')
             ->orWhere('title', 'like' , '%' . $search . '%');
         });
+
+        // query filter
+        $query->when($filters['category'] ?? false, function($query, $category){
+            return $query->whereHas('categories', function($query) use ($category){
+                    $query->where('slug', $category);
+            });
+        });
     }
+
 
 
     public function categories(){

@@ -1,4 +1,4 @@
-{{-- @dd($category) --}}
+{{-- @dd($active) --}}
 @extends('layouts.main')
 
 @section('container')
@@ -68,8 +68,8 @@
 
         <div class="container my-4 main-message border">
             <p>{{ $msg->title }}</p>
-          <p><a href="/author/{{ $msg->users->username }}">{{ $msg->users->name }}</a></p>
-            <p><a href="/{{ $msg->categories->slug }}"> {{ $msg->categories->name }}</a></p>
+          <p><a href="/?author={{ $msg->users->username }}">{{ $msg->users->name }}</a></p>
+            <p><a href="/?category={{ $msg->categories->slug }}"> {{ $msg->categories->name }}</a></p>
             <div class="border-bottom  border-dark">
 
             </div>
