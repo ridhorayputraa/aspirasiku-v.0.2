@@ -31,6 +31,10 @@
 
             <form action="/">
                 <div class="input-group mb-3">
+                    @if (request('category'))
+                    <input type="hidden" name="category" value="{{ request('category') }}">
+
+                    @endif
                     <input type="text" class="form-control" placeholder="Search..." name="search"
                         value="{{ request('search') }}">
                         <button class="btn btn-danger" type="submit" >Search</button>
@@ -54,7 +58,7 @@
 <div class="col-12 col-md-9  mt-5">
 
 
-    <h1 class="mb-2">All Tags</h1>
+    <h1 class="mb-2">{{ $title }}</h1>
 
     {{-- for right --}}
 

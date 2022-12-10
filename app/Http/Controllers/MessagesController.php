@@ -13,15 +13,22 @@ class MessagesController extends Controller
     public function index(){
 
       $active = 'home';
+      $title = 'All tags';
       if(request('category')){
           $category = Categories::firstWhere('slug', request('category'));
           $active =  $category->slug;
+          $title = $category->name;
       }
 
+      if(request('author')){
+        $author = Users::firstWhere('username', request('author'));
+        $active =  "home";
+        $title = 'All messages by '. $author->name;
+    }
 
      return view('home', [
         'active' => $active,
-          'title' => 'Messages',
+          'title' => $title,
           'messages' => Messages::latest()->filters(request(['search', 'category']))->get(),
           'categories' => Categories::all()
      ]);
