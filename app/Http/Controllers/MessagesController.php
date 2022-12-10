@@ -29,7 +29,7 @@ class MessagesController extends Controller
      return view('home', [
         'active' => $active,
           'title' => $title,
-          'messages' => Messages::latest()->filters(request(['search', 'category', 'author']))->get(),
+          'messages' => Messages::latest()->filters(request(['search', 'category', 'author']))->paginate(5),
           'categories' => Categories::all()
      ]);
     }
