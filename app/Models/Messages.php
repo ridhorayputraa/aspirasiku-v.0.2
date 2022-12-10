@@ -16,6 +16,7 @@ class Messages extends Model
 
 
     public function scopeFilters($query, array $filters){
+
         $query->when($filters['search'] ?? false, function($query, $search){
             return $query->where('title', 'like' , '%' . $search . '%')
             ->orWhere('title', 'like' , '%' . $search . '%');
@@ -27,6 +28,11 @@ class Messages extends Model
                     $query->where('slug', $category);
             });
         });
+
+        $query->when($filters['author'] ?? false, fn($query, $author) =>
+        $query->whereHas('users', fn($query) =>
+        $query->where('username', $author))
+      );
     }
 
 
