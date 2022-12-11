@@ -23,7 +23,7 @@ class MessagesController extends Controller
       if(request('author')){
         $author = Users::firstWhere('username', request('author'));
         $active =  "home";
-        $title = 'All messages by '. $author->name;
+        $title = 'Messages by '. $author->name;
     }
 
      return view('home', [
