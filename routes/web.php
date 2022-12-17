@@ -23,6 +23,7 @@ Route::get('/', [MessagesController::class, 'index']);
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/{categories:slug}', [MessagesController::class, 'show']);
 Route::get('/author/{users:username}', [UsersController::class, 'show']);
