@@ -7,7 +7,7 @@
     text-decoration: none;
     color: #494747;
 } */
-.btn-primary{
+.btn-dark{
     background-color: #2E2A2A;
     font-weight: bold;
     border: 0;
@@ -19,15 +19,34 @@
     font-weight: bold;
 }
 
+
+
 .notclick{
 color: #818181;
 }
-.btn-primary:hover{
+.btn-dark:hover{
 
     background-color: #494747;
+    border-color: #494747;
     font-weight: bold;
 
 }
+
+.btn-dark:active{
+    background-color: #494747;
+    border-color: #494747;
+}
+
+.btn-dark:disabled{
+    background-color: #494747;
+    border-color: #494747;
+}
+
+.btn-dark:active {
+    outline: none !important;
+    background-color: #2AB27B;
+    box-shadow: none;
+ }
 
 body{
     margin: 0;

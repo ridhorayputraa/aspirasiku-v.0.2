@@ -54,7 +54,7 @@
               </div>
 
 
-              <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Register</button>
+              <button class="w-100 btn btn-lg btn-dark mt-4" type="submit">Register</button>
             </form>
 
             <small class="d-block text-center mt-3">
