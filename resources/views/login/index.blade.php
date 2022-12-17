@@ -8,7 +8,7 @@
 
          @if (session()->has('success'))
          {{-- ALert for flashing --}}
-         <div class="alert alert-success alert-dismissible fade show" role="alert">
+         <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
              {{ session('success') }}
              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
            </div>
@@ -17,7 +17,7 @@
 
 
 
-        <main class="form-signin w-100 m-auto">
+        <main class="form-signin w-100 mt-5 m-auto">
             <h1 class="h3 mb-3 fw-normal text-center">Please login</h1>
             <form>
               <div class="form-floating">
