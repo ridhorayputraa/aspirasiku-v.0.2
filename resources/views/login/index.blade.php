@@ -20,7 +20,8 @@
         <main class="form-signin w-100 mt-5 m-auto">
             <h1 class="h3 mb-3 fw-normal text-center">Please login</h1>
             <form action="/login" method="post">
-              <div class="form-floating">
+            @csrf
+                <div class="form-floating">
                 <input type="email" class="form-control" value="{{ old('email') }}" name="email" required id="email" placeholder="name@example.com">
                 <label for="email">Email address</label>
               </div>

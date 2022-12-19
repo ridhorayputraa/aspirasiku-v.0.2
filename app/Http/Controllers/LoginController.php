@@ -13,4 +13,12 @@ class LoginController extends Controller
                'active' => 'login'
         ]);
     }
+
+    public function authenticate(Request $request){
+       $credentials = $request->validate([
+         'email' => 'required|email:dns',
+         'password' => 'required'
+       ]);
+       dd('loginn oke');
+    }
 }
