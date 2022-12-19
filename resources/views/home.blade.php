@@ -9,8 +9,16 @@
         <div class="row pt-5 " >
             <div class="col-12 col-md-6 align-self-center">
                 <h1 class="mb-3">Selamat Datang di Aspirasiku</h1>
-                <p class="mb-3">Gabung Sekarang untuk menyalurkan aspirasi</p>
-                <a href="/login" class="text-decoration-none mb-4 btn btn-dark">Log In</a>
+                @auth
+                <p class="mb-3">Terimkasih telah bergabung <i>{{ auth()->user()->name }}</i>, silahkan membuat pesan baru ataupun berkomentar</p>
+
+                <a href="/dashboard" class="text-decoration-none mb-4 btn btn-dark">To Dashboard</a>
+
+                    @else
+                    <p class="mb-3">Gabung Sekarang untuk menyalurkan aspirasi</p>
+                    <a href="/login" class="text-decoration-none mb-4 btn btn-dark">Log In</a>
+                @endauth
+
             </div>
             <div class="col-12 col-md-6 algin-self-center">
                 <img src="../img/loud.jpg" class="rounded-circle img-fluid" width="500px" alt="aspiration logo">
