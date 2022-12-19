@@ -34,11 +34,21 @@
             <form action="/login" method="post">
             @csrf
                 <div class="form-floating">
-                <input type="email" class="form-control" value="{{ old('email') }}" name="email" required id="email" placeholder="name@example.com">
+                <input type="email" class="form-control @error('email')
+                  'is-invalid'
+                @enderror" value="{{ old('email') }}" name="email" required id="email" placeholder="name@example.com">
                 <label for="email">Email address</label>
+                @error('email')
+                     <div class="invalid-feedback">
+                        {{ $message }}
+                     </div>
+                @enderror
+
               </div>
               <div class="form-floating">
-                <input type="password" required class="form-control" name="password" id="password" placeholder="Password">
+                <input type="password"  required class="form-control @error('password')
+                  is-invalid
+                @enderror" name="password" id="password" placeholder="Password">
                 <label for="password">Password</label>
               </div>
 
