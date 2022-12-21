@@ -55,6 +55,9 @@ class DashboardMessagesController extends Controller
     public function show(Messages $messages)
     {
         //
+        return view('dashboard.messages.show', [
+            'message' => $messages
+        ]);
     }
 
     /**
