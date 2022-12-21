@@ -1,3 +1,4 @@
+@dd($message)
 @extends('dashboard.layouts.main')
 
 @section('container')

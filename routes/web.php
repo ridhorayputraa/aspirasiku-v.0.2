@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardMessagesController;
 use App\Http\Controllers\LoginController;
@@ -23,6 +24,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MessagesController::class, 'index']);
 
+Route::get('/aspiration/{message:slug}', [MessagesController::class, 'show']);
+
+
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
@@ -40,7 +44,7 @@ Route::resource('/dashboard/messages', DashboardMessagesController::class)->midd
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/{categories:slug}', [MessagesController::class, 'show']);
+Route::get('/{categories:slug}', [CategoryController::class, 'show']);
 Route::get('/author/{users:username}', [UsersController::class, 'show']);
 
 // cari slug yang slug nya samaa dengan parameter
