@@ -34,6 +34,7 @@ class MessagesController extends Controller
      ]);
     }
 
+    // for detail
     public function show(Messages $messages){
         return view('detail', [
             'active' => 'detail',
