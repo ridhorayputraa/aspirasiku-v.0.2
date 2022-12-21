@@ -34,12 +34,11 @@ class MessagesController extends Controller
      ]);
     }
 
-    public function show(Categories $categories){
-        return view('category', [
-            'active' => $categories->slug,
-          'category' => $categories,
-          'categories' => Categories::all(),
-          'messages' => $categories->messages
+    public function show(Messages $messages){
+        return view('detail', [
+            'active' => 'detail',
+            'title' => 'Detail messages',
+            'message' => $messages
         ]);
     }
 
