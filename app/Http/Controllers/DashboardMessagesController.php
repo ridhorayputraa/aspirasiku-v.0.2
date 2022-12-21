@@ -52,11 +52,11 @@ class DashboardMessagesController extends Controller
      * @param  \App\Models\Messages  $messages
      * @return \Illuminate\Http\Response
      */
-    public function show(Messages $messages)
+    public function show(Messages $message)
     {
         //
         return view('dashboard.messages.show', [
-            'message' => $messages
+            'message' => $message
         ]);
     }
 
