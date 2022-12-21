@@ -19,7 +19,7 @@ class DashboardMessagesController extends Controller
                 // hanya tampilkan kan postingan user
                 // ambil berdasarkn user_id = yang terotentikasi
 
-                'posts' => Messages::where('users_id', auth()->user()->id)->get()
+                'messages' => Messages::where('users_id', auth()->user()->id)->get()
 
             ]);
         //
