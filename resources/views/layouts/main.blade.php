@@ -20,9 +20,10 @@
      @yield('user')
     </div>
 
-   <div class="container-fluid section">
+   <div class=" ">
     @yield('container')
    </div>
+
 {{-- tessss --}}
 {{-- tesss2 --}}
    <section data-aos="fade-up" class="main-section pt-5  ">

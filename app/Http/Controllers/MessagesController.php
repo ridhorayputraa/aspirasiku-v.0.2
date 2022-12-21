@@ -35,11 +35,11 @@ class MessagesController extends Controller
     }
 
     // for detail
-    public function show(Messages $messages){
+    public function show(Messages $message){
         return view('detail', [
             'active' => 'detail',
             'title' => 'Detail messages',
-            'message' => $messages
+            'message' => $message
         ]);
     }
 

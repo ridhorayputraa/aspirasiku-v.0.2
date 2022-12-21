@@ -3,6 +3,7 @@
 
 @section('container')
 
+<div class="section container-fluid">
 
 <section class="hero pt-5 section">
     <div class="container">
@@ -90,7 +91,7 @@
 
             </div>
             <p>{{ $msg->excerpt }}</p>
-            <p><a href="/">Click to see the comments</a> </p>
+            <p><a href="/aspiration/{{$msg->slug}}">Click to see the comments</a> </p>
         </div>
         @endforeach
         @else
@@ -105,7 +106,7 @@
 </div>
 
 {{ $messages->links()}}
-
+</div>
 @endsection
 
 
