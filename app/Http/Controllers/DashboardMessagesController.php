@@ -14,6 +14,14 @@ class DashboardMessagesController extends Controller
      */
     public function index()
     {
+            //
+            return view('dashboard.messages.index', [
+                // hanya tampilkan kan postingan user
+                // ambil berdasarkn user_id = yang terotentikasi
+
+                'posts' => Messages::where('user_id', auth()->user()->id)->get()
+
+            ]);
         //
     }
 

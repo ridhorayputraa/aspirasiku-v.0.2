@@ -9,9 +9,9 @@
         </li>
         <li class="nav-item">
             {{-- ngambil dari request parameter => URL --}}
-          <a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }} " href="/dashboard/posts">
+          <a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }} " href="/dashboard/messages">
             <span data-feather="file-text" class="align-text-bottom"></span>
-            My Posts
+            My Aspiration
           </a>
         </li>
 
