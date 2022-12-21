@@ -49,4 +49,13 @@ class Messages extends Model
     public function users(){
         return $this->belongsTo(Users::class);
     }
+
+
+    // Route model binding for changing default to slug
+    public function getRouteKeyName()
+{
+    return 'slug';
+}
+
+
 }

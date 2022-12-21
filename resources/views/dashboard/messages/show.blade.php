@@ -7,25 +7,25 @@
 
 
 
-    <h1 class="mb-3">{{ $post->title }}</h1>
+    <h1 class="mb-3">{{ $message->title }}</h1>
 
-<a href="/dashboard/posts" class="btn btn-success"  ><span data-feather="arrow-left"></span> Back to all my posts</a>
+<a href="/dashboard/messages" class="btn btn-success"  ><span data-feather="arrow-left"></span> Back to all my aspiration</a>
 
 <a href="" class="btn btn-warning"  ><span data-feather="edit"></span>Edit</a>
 
 <a href="" class="btn btn-danger"  ><span data-feather="edit"></span>Delete</a>
 
 
-    <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid mt-3">
+    <img src="https://source.unsplash.com/1200x400?{{ $message->categories->name }}" alt="{{ $message->categories->name }}" class="img-fluid mt-3">
 
     <article class="my- fs-6">
-        {!! $post->body !!}
+        {!! $message->body !!}
     </article>
 
 
 
 
-        <a href="/blog" class="d-block mt-3">Back to post</a>
+        <a href="/" class="d-block mt-3">Back to post</a>
 
         </div>
     </div>
