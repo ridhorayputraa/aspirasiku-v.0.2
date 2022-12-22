@@ -42,7 +42,7 @@
     <div class="box">
 		<form action="">
 			<div class="inputBox">
-				<input type="text" name="" required="">
+				<input type="text" name="">
 				<label for="">Create a comment</label>
 			</div>
 			<input type="submit" name="" value="Submit">
