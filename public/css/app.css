@@ -150,5 +150,9 @@ h1{
 }
 
 .user-cmn{
+    margin-top: 0.5em;
     font-size: 0.9em;
+}
+.cmn-body{
+    border-bottom: 1px solid #aba8a8 ;
 }

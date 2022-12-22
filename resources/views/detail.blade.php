@@ -31,9 +31,10 @@
     </div>
     @foreach ($comment as $cmn )
     <div class="row border-bottom pt-2 comment-card">
-        <p>{{ $cmn->body}}</p>
-        <div class="border-bottom"></div>
-        <p class="user-cmn" >{{ $cmn->users->name }}</p>
+        <p class="cmn-body">{{ $cmn->body}}</p>
+
+            <p class="user-cmn" >{{ $cmn->users->name }}</p>
+
         {{-- <p>{{ $comment->users->name }}</p> --}}
     </div>
 
