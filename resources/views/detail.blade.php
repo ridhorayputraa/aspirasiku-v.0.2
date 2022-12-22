@@ -35,22 +35,24 @@
 
             <p class="user-cmn" >{{ $cmn->users->name }}</p>
 
-        {{-- <p>{{ $comment->users->name }}</p> --}}
     </div>
 
     @endforeach
 
-    <form action="">
-        <div class="inputBox">
-            <input type="text" name="" required="">
-            <label for="">Username</label>
-        </div>
-        <div class="inputBox">
-            <input type="password" name="" required="">
-            <label for="">Password</label>
-        </div>
-        <input type="submit" name="" value="Submit">
-    </form>
+    <div class="box">
+		<h2>Login</h2>
+		<form action="">
+			<div class="inputBox">
+				<input type="text" name="" required="">
+				<label for="">Username</label>
+			</div>
+			<div class="inputBox">
+				<input type="password" name="" required="">
+				<label for="">Password</label>
+			</div>
+			<input type="submit" name="" value="Submit">
+		</form>
+	</div>
 
 </div>
 

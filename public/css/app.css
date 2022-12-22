@@ -140,8 +140,6 @@ h1{
 
   .comment-card{
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #E0E0E0;
     margin-bottom: 1.3em;
     padding-bottom: 2.8em;
@@ -156,3 +154,68 @@ h1{
 }
 
 
+/* css form trasnparaent */
+
+
+.box .inputBox {
+	position: relative;
+}
+.box .inputBox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgb(114, 114, 114);
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid rgb(114, 114, 114);
+	outline: none;
+	background: transparent;
+}
+.box .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgb(114, 114, 114);
+	pointer-events: none;
+	transition: .5s;
+	animation: LabelOnLoad 1s forwards 0s ease;
+}
+@keyframes LabelOnLoad{
+    0%{
+        transform: rotate(0) translateY(-19px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+	top: -19px;
+	left:0;
+	color: #03A9F4;
+	font-size: 12px;
+}
+.box input[type='submit'] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: rgb(114, 114, 114);;
+	background: #03A9F4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.box input[type='submit']:hover {
+	background-color: rgba(3, 169, 244, 0.7);
+}
+@media(max-width: 720px){
+	.box {
+		width: 80%;
+	}
+}
