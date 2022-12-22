@@ -26,7 +26,7 @@
                         <!-- <h6 class="text-muted mb-0">@johnducky</h6> -->
                         <form action="/logout" method="post">
                             @csrf
-                            <button type="submit" class="nav-link bg-transparent border-0" href="#">      Logout  </button>
+                            <button type="submit" class="nav-link logout bg-transparent border-0" href="#">      Logout  </button>
                            </form>
                     </div>
 
