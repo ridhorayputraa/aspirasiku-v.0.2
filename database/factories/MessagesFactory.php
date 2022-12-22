@@ -30,7 +30,7 @@ class MessagesFactory extends Factory
                  })->implode(''),
                  'categories_id' => mt_rand(1,3),
                  'users_id' => mt_rand(1,3),
-                 'comments_id' => mt_rand(1,50)
+                //  'comments_id' => mt_rand(1,50)
         ];
     }
 }

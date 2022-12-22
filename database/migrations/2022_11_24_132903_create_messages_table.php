@@ -17,7 +17,7 @@ class CreateMessagesTable extends Migration
             $table->id();
             $table->foreignId('categories_id');
             $table->foreignId('users_id');
-            $table->foreignId('comments_id');
+            // $table->foreignId('comments_id');
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('excerpt');
