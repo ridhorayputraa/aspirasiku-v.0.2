@@ -43,7 +43,7 @@ class Messages extends Model
 
 
     public function comments(){
-        return $this->belongsTo(Comments::class);
+        return $this->hasMany(Comments::class);
     }
 
     public function users(){

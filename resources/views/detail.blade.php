@@ -29,10 +29,14 @@
         <h4 class="border-bottom">Comments Section</h4>
 
     </div>
-    <div class="row section pt-5">
-        <p>{{ $comment}}</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio quo maxime minus corrupti explicabo officiis ut animi nihil quaerat?</p>
+    @foreach ($comment as $cmn )
+    <div class="row border-bottom pt-2">
+        <p>{{ $cmn->body}}</p>
+        <p>{{ $cmn->users->name }}</p>
+        {{-- <p>{{ $comment->users->name }}</p> --}}
     </div>
+
+    @endforeach
 </div>
 
 @endsection
