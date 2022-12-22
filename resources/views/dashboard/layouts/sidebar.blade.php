@@ -24,11 +24,26 @@
 
     <li
         class="sidebar-item active ">
-        <a href="index.html" class='sidebar-link'>
+        <a href="/dashboard" class='sidebar-link'>
             <i class="bi bi-grid-fill"></i>
             <span>Dashboard</span>
         </a>
     </li>
+
+
+        {{-- ngambil dari request parameter => URL --}}
+
+        {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
+
+        <li
+        class="sidebar-item {{ Request::is('dashboard/messages') ? 'active' : '' }} ">
+        <a href=" /dashboard/messages" class='sidebar-link'>
+            <i class="bi bi-file-text"></i>
+            <span>My Aspiration</span>
+        </a>
+    </li>
+
+
 
 
 
