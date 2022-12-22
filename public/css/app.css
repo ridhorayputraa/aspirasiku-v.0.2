@@ -141,12 +141,10 @@ h1{
   .comment-card{
     display: flex;
     align-items: center;
-
     justify-content: center;
     background-color: #E0E0E0;
     margin-bottom: 1.3em;
-    padding-top: 1em;
-    padding-bottom: 0.8em;
+    padding-bottom: 2.8em;
 }
 
 .user-cmn{
@@ -154,5 +152,7 @@ h1{
     font-size: 0.9em;
 }
 .cmn-body{
-    border-bottom: 1px solid #aba8a8 ;
+    border-bottom: 1px solid #aba8a8;
 }
+
+
