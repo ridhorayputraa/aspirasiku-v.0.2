@@ -40,15 +40,10 @@
     @endforeach
 
     <div class="box">
-		<h2>Login</h2>
 		<form action="">
 			<div class="inputBox">
 				<input type="text" name="" required="">
-				<label for="">Username</label>
-			</div>
-			<div class="inputBox">
-				<input type="password" name="" required="">
-				<label for="">Password</label>
+				<label for="">Create a comment</label>
 			</div>
 			<input type="submit" name="" value="Submit">
 		</form>
