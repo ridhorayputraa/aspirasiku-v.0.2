@@ -1,3 +1,5 @@
+@extends('layouts.main')
+@section('top')
 <section class="row">
     <div class="col-12 col-lg-9">
         <div class="card">
@@ -40,3 +42,4 @@
 
 
 </section>
+@endsection

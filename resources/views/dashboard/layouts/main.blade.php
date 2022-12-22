@@ -26,17 +26,14 @@
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
-            
+
             </header>
 
 <div class="page-heading">
     <h3>Dashboard || Aspirasiku</h3>
 </div>
-<div class="page-content">
-@include('dashboard.layouts.top')
-</div>
 
-<div class="col-12 col-lg-9">
+<div class=" page-conten">
     <div class="row">
 
       @yield('container')
