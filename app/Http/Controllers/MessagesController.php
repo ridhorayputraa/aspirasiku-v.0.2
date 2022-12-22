@@ -39,7 +39,8 @@ class MessagesController extends Controller
         return view('detail', [
             'active' => 'detail',
             'title' => 'Detail messages',
-            'message' => $message
+            'message' => $message,
+            'comment' => $message->comments,
         ]);
     }
 

@@ -29,7 +29,8 @@ class MessagesFactory extends Factory
                      return "<p>$p</p>" ;
                  })->implode(''),
                  'categories_id' => mt_rand(1,3),
-                 'users_id' => mt_rand(1,3)
+                 'users_id' => mt_rand(1,3),
+                 'comments_id' => mt_rand(1,50)
         ];
     }
 }

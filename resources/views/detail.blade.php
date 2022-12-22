@@ -30,7 +30,7 @@
 
     </div>
     <div class="row section pt-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem quae dolore perspiciatis quam beatae dolores neque distinctio consequatur.</p>
+        <p>{{ $comment}}</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio quo maxime minus corrupti explicabo officiis ut animi nihil quaerat?</p>
     </div>
 </div>
