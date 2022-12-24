@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Categories;
 use App\Models\Messages;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
+
 
 class DashboardMessagesController extends Controller
 {
@@ -98,4 +100,11 @@ class DashboardMessagesController extends Controller
     {
         //
     }
+
+    public function checkSlug(Request $request){
+
+        $slug = SlugService::createSlug(Messages::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
+            }
+
 }

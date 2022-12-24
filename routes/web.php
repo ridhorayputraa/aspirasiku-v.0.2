@@ -37,6 +37,10 @@ Route::get('/dashboard', function(){
     return view('dashboard.index');
 })->middleware('auth');
 
+// Untuk fetch Slug
+Route::get('/dashboard/messages/checkSlug', [DashboardMessagesController::class, 'checkSlug'])->middleware('auth');
+
+
 // Routes Resource for CRUD
 Route::resource('/dashboard/messages', DashboardMessagesController::class)->middleware('auth');
 

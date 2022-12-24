@@ -72,11 +72,12 @@
     const slug = document.querySelector('#slug');
 
     title.addEventListener('change', function(){
-        fetch('/dashboard/posts/checkSlug?title=' + title.value)
+        console.log(slug.value)
+        fetch('/dashboard/messages/checkSlug?title=' + title.value)
         .then(response => response.json())
         .then(data => slug.value = data.slug)
     })
-    console.log(title.value)
+
 
 
     document.addEventListener('trix-file-accept', function(e){
