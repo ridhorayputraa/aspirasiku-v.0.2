@@ -15,6 +15,31 @@
 
 <link rel="stylesheet" href="/assets/css/shared/iconly.css">
 <link rel="stylesheet" href="/css/dashboard.css">
+
+
+{{-- Trix --}}
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+<script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+
+<style>
+    trix-toolbar [data-trix-button-group='file-tools']{
+        display: none;
+    }
+
+    trix-toolbar .trix-button-group button {
+  background-color:#ffffff4b;
+
+   /* background-color: rgba(rgb(247, 247, 247), rgb(254, 254, 254), rgb(255, 255, 255), 0.6) */
+
+}
+
+trix-toolbar{
+    opacity: 0.4;
+
+    }
+
+</style>
+
 </head>
 
 <body>
