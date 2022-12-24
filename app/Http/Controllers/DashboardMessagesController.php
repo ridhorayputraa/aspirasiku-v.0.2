@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categories;
 use App\Models\Messages;
+use App\Models\Categories;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Str;
@@ -50,17 +50,18 @@ class DashboardMessagesController extends Controller
     public function store(Request $request)
     {
         //
-        $validatedData = $request->validate([
-          'title' => 'required|max:255',
-          'slug' => 'required|unique:messages',
-          'categories_id' => 'required',
-          'body' => 'required'
+
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'slug' => 'required',
+            'categories_id' => 'required',
+            'body' => 'required'
         ]);
 
-        $validatedData['users_id'] = auth()->user()->id;
-        $validatedData['excerpt'] = Str::limit(strip_tags( $request->body), 200);
+        $validated['users_id'] = auth()->user()->id;
+        $validated['excerpt'] = Str::limit(strip_tags( $request->body), 200);
 
-        Messages::create($validatedData);
+        Messages::create($validated);
 
         return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
 
