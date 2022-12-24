@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categories;
 use App\Models\Messages;
 use Illuminate\Http\Request;
 
@@ -33,6 +34,9 @@ class DashboardMessagesController extends Controller
     public function create()
     {
         //
+        return view('dashboard.messages.create',[
+            'categories' => Categories::all()
+        ]);
     }
 
     /**
