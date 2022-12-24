@@ -40,12 +40,14 @@
     @endforeach
 
     <div class="box">
-		<form action="">
-			<div class="inputBox">
-				<input type="text" name="">
+		<form action="/createcomment" method="post">
+	        @csrf
+            <div class="inputBox">
+				<input type="text" name="body">
 				<label for="">Create a comment</label>
 			</div>
-			<input type="submit" name="" value="Submit">
+            <button type="submit" class="btn btn-primary">Create Post</button>
+
 		</form>
 	</div>
 
