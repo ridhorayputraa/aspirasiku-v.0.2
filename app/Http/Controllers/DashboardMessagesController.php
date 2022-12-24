@@ -48,6 +48,7 @@ class DashboardMessagesController extends Controller
     public function store(Request $request)
     {
         //
+        return $request;
     }
 
     /**

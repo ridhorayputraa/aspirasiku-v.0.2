@@ -8,7 +8,7 @@
   {{-- form --}}
   <div class="col-lg-8">
 
-      <form method="post" class="mb-5" action="/dashboard/posts">
+      <form method="post" class="mb-5" action="/dashboard/messages">
         @csrf
         {{-- akan langung ke method source --}}
         <div class="mb-3">
