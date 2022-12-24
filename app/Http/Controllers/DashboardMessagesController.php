@@ -6,7 +6,7 @@ use App\Models\Categories;
 use App\Models\Messages;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
-
+use Illuminate\Support\Str;
 
 class DashboardMessagesController extends Controller
 {
@@ -50,7 +50,21 @@ class DashboardMessagesController extends Controller
     public function store(Request $request)
     {
         //
-        return $request;
+        $validatedData = $request->validate([
+          'title' => 'required|max:255',
+          'slug' => 'required|unique:messages',
+          'categories_id' => 'required',
+          'body' => 'required'
+        ]);
+
+        $validatedData['users_id'] = auth()->user()->id;
+        $validatedData['excerpt'] = Str::limit(strip_tags( $request->body), 200);
+
+        Messages::create($validatedData);
+
+        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
+
+
     }
 
     /**
