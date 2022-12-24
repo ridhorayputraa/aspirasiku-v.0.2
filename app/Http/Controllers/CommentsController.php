@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comments;
+use GuzzleHttp\Promise\Create;
 use Illuminate\Http\Request;
 
 class CommentsController extends Controller
@@ -10,21 +11,19 @@ class CommentsController extends Controller
     //
     public function store(Request $request)
     {
+
         //
-        return $request;
-        // $validatedData = $request->validate([
-        //     'title' => 'required|max:255',
-        //     'slug' => 'required|unique:posts',
-        //     'category_id' => 'required',
-        //     'body' => 'required'
-        // ]);
+        $validatedData = $request->validate([
+            'body' => 'required',
+            'messages_id' => 'required'
+        ]);
 
-        // // Tambahkan user_id
-        // $validatedData['user_id'] = auth()->user()->id;
+        // $validatedData['messages_id'] = $request->messages_id;
+        $validatedData['users_id'] = auth()->user()->id;
 
-        // Comments::create($validatedData);
+        Comments::create($validatedData);
 
-        // return redirect('/dashboard/posts' )->with('success', 'New post has been added!');
+        return back()->with('commentssucsess', 'Berhasil menambakan komentar!');
 
     }
 }

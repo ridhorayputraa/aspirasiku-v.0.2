@@ -2,8 +2,14 @@
 
 @section('container')
 
+@if (session()->has('commentssucsess'))
+<div class="alert alert-success mt-3" role="alert">
+  {{ session('commentssucsess') }}
+</div>
+@endif
+
 <div class="container">
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center mb-5 ">
         <div class="col-md-8">
 
 
@@ -43,8 +49,17 @@
 		<form action="/createcomment" method="post">
 	        @csrf
             <div class="inputBox">
-				<input type="text" name="body">
-				<label for="">Create a comment</label>
+				<input type="text" class="@error('body')
+                 is-invalid
+                @enderror" id="body" name="body">
+                <input type="text" value="{{ $message->id }}" hidden name="messages_id">
+				<label for="body">Create a comment</label>
+
+                @error('body')
+                 <div class="invalid-feedback">
+                    {{ $message }}
+                 </div>
+                @enderror
 			</div>
             <button type="submit" class="btn btn-primary">Create Post</button>
 
