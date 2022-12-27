@@ -114,6 +114,9 @@ class DashboardMessagesController extends Controller
     public function destroy(Messages $messages)
     {
         //
+        Messages::destroy($messages->id);
+        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di hapus!');
+
     }
 
     public function checkSlug(Request $request){
