@@ -53,7 +53,7 @@ class DashboardMessagesController extends Controller
 
         $validated = $request->validate([
             'title' => 'required|max:255',
-            'slug' => 'required',
+            'slug' => 'required|unique:messages',
             'categories_id' => 'required',
             'body' => 'required'
         ]);
@@ -107,18 +107,22 @@ class DashboardMessagesController extends Controller
      */
 
     //  Logic Update
-    public function update(Request $request, Messages $messages)
+    public function update(Request $request, Messages $message)
     {
         //
         $filter = [
             'title' => 'required|max:255',
-            'slug' => 'required',
             'categories_id' => 'required',
             'body' => 'required'
         ];
 
+        if($request->slug != $message->slug){
+            $filter['slug'] = 'required|unique:messages';
+        }
+        
 
-       
+
+
 
         return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
 
