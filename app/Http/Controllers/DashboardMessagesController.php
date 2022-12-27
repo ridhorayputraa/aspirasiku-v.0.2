@@ -119,7 +119,11 @@ class DashboardMessagesController extends Controller
         if($request->slug != $message->slug){
             $filter['slug'] = 'required|unique:messages';
         }
-        
+
+        $validate = $request->validate($filter);
+
+       Messages::where('id', $message->id)->update($validate);
+
 
 
 
