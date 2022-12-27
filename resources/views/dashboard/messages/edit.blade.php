@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Edit Post</h1>
+    <h1 class="h2">Edit Aspiration</h1>
   </div>
 
   {{-- form --}}
@@ -40,7 +40,7 @@
         </div>
 
                 <div class="mb-3">
-                  <label for="category" class="form-label">Category</label>
+                  <label for="category" class="form-label">Tag</label>
                   <select class="form-select" name="categories_id">
                        @foreach ($categories as $category )
                        @if (old('categories_id', $message->categories_id) == $category->id)
