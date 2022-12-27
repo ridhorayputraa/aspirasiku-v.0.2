@@ -28,10 +28,6 @@
     </article>
 
 
-
-
-        <a href="/" class="d-block mt-3">Back to post</a>
-
         </div>
     </div>
 

@@ -13,13 +13,13 @@
   @endif
 
   <div class="table-responsive col-lg-8">
-    <a href="/dashboard/messages/create" class="btn btn-primary mb-3">Create new post</a>
+    <a href="/dashboard/messages/create" class="btn btn-primary mb-3">Create new aspiration</a>
     <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th scope="col">id</th>
+          <th scope="col">Id</th>
           <th scope="col">Title</th>
-          <th scope="col">Category</th>
+          <th scope="col">Tags</th>
           <th scope="col">Action</th>
         </tr>
       </thead>

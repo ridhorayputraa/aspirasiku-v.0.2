@@ -14,13 +14,12 @@
 
 
 
-    <h1 class="mb-3">{{ $message->title }}</h1>
+    <h1 class="mb-3 mt-3">{{ $message->title }}</h1>
 
     <p>By. <a class="text-decoration-none" href="/?author={{ $message->users->username }}"> {{ $message->users->name }}</a> in <a href="/?category={{ $message->categories->slug }}" class="text-decoration-none"> {{ $message->categories->name }}</a></p>
 
-    <img src="https://source.unsplash.com/1200x400?{{ $message->categories->name }}" alt="{{ $message->categories->name }}" class="img-fluid">
 
-    <article class="my- fs-6">
+    <article class="my-3 fs-6 ">
         {!! $message->body !!}
     </article>
 +
