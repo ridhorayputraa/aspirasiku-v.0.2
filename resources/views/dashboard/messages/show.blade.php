@@ -8,7 +8,7 @@
 
 
 
-    <h1 class="mb-3">{{ $message->title }}</h1>
+    <h1 class="mb-3 mt-3">{{ $message->title }}</h1>
 
 <a href="/dashboard/messages" class="btn btn-success"  ><span data-feather="arrow-left"></span> Back to all my aspiration</a>
 {{-- edit --}}
@@ -21,9 +21,8 @@
 <button  class="btn btn-danger" onclick="return confirm('Are you sure?')" >Delete<span data-feather='x-circle' ></span></button>
 </form>
 
-    <img src="https://source.unsplash.com/1200x400?{{ $message->categories->name }}" alt="{{ $message->categories->name }}" class="img-fluid mt-3">
 
-    <article class="my- fs-6">
+    <article class="my-3 fs-6">
         {!! $message->body !!}
     </article>
 
