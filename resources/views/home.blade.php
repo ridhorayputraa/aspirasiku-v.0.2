@@ -85,13 +85,13 @@
 
         <div class="container my-4 main-message border">
             <p>{{ $msg->title }}</p>
-          <p><a href="/?author={{ $msg->users->username }}">{{ $msg->users->name }}</a></p>
-            <p><a href="/?category={{ $msg->categories->slug }}"> {{ $msg->categories->name }}</a></p>
+          <p><a class="text-decoration-none link link-dark" href="/?author={{ $msg->users->username }}">{{ $msg->users->name }}</a></p>
+            <p><a class="text-decoration-none link link-dark" href="/?category={{ $msg->categories->slug }}"> {{ $msg->categories->name }}</a></p>
             <div class="border-bottom  border-dark">
 
             </div>
             <p>{{ $msg->excerpt }}</p>
-            <p><a href="/aspiration/{{$msg->slug}}">Click to see the comments</a> </p>
+            <p><a class="text-decoration-none " href="/aspiration/{{$msg->slug}}">Click to see the comments</a> </p>
         </div>
         @endforeach
         @else

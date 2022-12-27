@@ -156,6 +156,9 @@ h1{
 
 /* css form trasnparaent */
 
+a:hover{
+    opacity: 0.8;
+}
 
 .box .inputBox {
 	position: relative;
