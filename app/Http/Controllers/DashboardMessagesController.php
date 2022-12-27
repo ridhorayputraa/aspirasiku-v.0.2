@@ -111,10 +111,11 @@ class DashboardMessagesController extends Controller
      * @param  \App\Models\Messages  $messages
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Messages $messages)
+    public function destroy(Messages $message)
     {
         //
-        Messages::destroy($messages->id);
+           // destroy untuk mengahpus data
+           Messages::destroy($message->id);
         return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di hapus!');
 
     }
