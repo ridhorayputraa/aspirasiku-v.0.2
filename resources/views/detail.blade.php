@@ -14,16 +14,20 @@
 
 
 
-    <h1 class="mb-3 mt-3">{{ $message->title }}</h1>
+
+        <h1 class="mb-3 mt-3">{{ $message->title }}</h1>
+
+
 
     <p>By. <a class="text-decoration-none" href="/?author={{ $message->users->username }}"> {{ $message->users->name }}</a> in <a href="/?category={{ $message->categories->slug }}" class="text-decoration-none"> {{ $message->categories->name }}</a></p>
 
-
+    <div class="border-bottom">
     <article class="my-3 fs-6 ">
         {!! $message->body !!}
     </article>
+    </div>
 
-        <a href="/" class="d-block mt-3">Back to home</a>
+        <a href="/" class="d-block mt-5">Back to home</a>
 
         </div>
     </div>
