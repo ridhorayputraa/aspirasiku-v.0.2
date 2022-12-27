@@ -22,11 +22,8 @@
     <article class="my-3 fs-6 ">
         {!! $message->body !!}
     </article>
-+
 
-
-
-        <a href="/" class="d-block mt-3">Back to post</a>
+        <a href="/" class="d-block mt-3">Back to home</a>
 
         </div>
     </div>
@@ -60,7 +57,7 @@
                  </div>
                 @enderror
 			</div>
-            <button type="submit" class="btn btn-primary">Create Post</button>
+            <button type="submit" class="btn btn-primary">Create Comments</button>
 
 		</form>
 	</div>
