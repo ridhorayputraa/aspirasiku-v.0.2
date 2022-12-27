@@ -36,7 +36,7 @@
         {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
 
         <li
-        class="sidebar-item {{ Request::is('dashboard/messages') ? 'active' : '' }} ">
+        class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
         <a href="/dashboard/messages" class='sidebar-link'>
             <i class="bi bi-file-text"></i>
             <span>My Aspiration</span>
