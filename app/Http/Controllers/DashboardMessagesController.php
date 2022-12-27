@@ -88,9 +88,14 @@ class DashboardMessagesController extends Controller
      * @param  \App\Models\Messages  $messages
      * @return \Illuminate\Http\Response
      */
-    public function edit(Messages $messages)
+    // Untuk view
+    public function edit(Messages $message)
     {
         //
+        return view('dashboard.messages.edit', [
+            'categories' => Categories::all(),
+            'message' => $message
+        ]);
     }
 
     /**
