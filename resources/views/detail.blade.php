@@ -61,7 +61,15 @@
                  </div>
                 @enderror
 			</div>
-            <button type="submit" class="btn btn-primary">Create Comments</button>
+           @auth
+           <button type="submit" class="btn btn-primary">Create Comments</button>
+
+           @else
+           <a href="/login" class="text-decoration-none mb-4 btn btn-primary">Create Comments</a>
+
+           @endauth
+
+
 
 		</form>
 	</div>
