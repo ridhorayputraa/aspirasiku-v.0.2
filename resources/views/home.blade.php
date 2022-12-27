@@ -95,7 +95,7 @@
         </div>
         @endforeach
         @else
-        <p class="text-center fs-4">Upsss there is no messages.</p>
+        <p class="text-center fs-4">Upsss there is nothing....</p>
         @endif
 
     </div>
