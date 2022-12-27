@@ -58,7 +58,7 @@
                   @error('body')
                   <p class="text-danger">{{ $message }}</p>
                   @enderror
-                  <input id="body" type="hidden" name="body" value="{{ old('body') }}">
+                  <input id="body" type="hidden" name="body" value="{{ old('body', $message->body) }}">
                   <trix-editor input="body"></trix-editor>
 
                 </div>
