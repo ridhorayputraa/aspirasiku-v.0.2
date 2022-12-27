@@ -126,9 +126,7 @@ class DashboardMessagesController extends Controller
 
 
 
-
-
-        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
+        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di Edit!');
 
     }
 
