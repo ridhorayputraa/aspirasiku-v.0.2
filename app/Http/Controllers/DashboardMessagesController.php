@@ -105,9 +105,23 @@ class DashboardMessagesController extends Controller
      * @param  \App\Models\Messages  $messages
      * @return \Illuminate\Http\Response
      */
+
+    //  Logic Update
     public function update(Request $request, Messages $messages)
     {
         //
+        $filter = [
+            'title' => 'required|max:255',
+            'slug' => 'required',
+            'categories_id' => 'required',
+            'body' => 'required'
+        ];
+
+
+       
+
+        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
+
     }
 
     /**
