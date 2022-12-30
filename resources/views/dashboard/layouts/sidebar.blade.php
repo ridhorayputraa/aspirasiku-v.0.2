@@ -49,21 +49,24 @@
 
 </ul>
 
+@can('admin')
+
 <ul class="menu">
     <li class="sidebar-title">Administrator</li>
 
-        {{-- ngambil dari request parameter => URL --}}
+    {{-- ngambil dari request parameter => URL --}}
 
-        {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
+    {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
 
-        <li
-        class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
+    <li
+    class="sidebar-item {{ Request::is('dashboard/admin*') ? 'active' : '' }} ">
         <a href="/dashboard/admin" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+            <i class="bi bi-person-lines-fill"></i>
             <span>Messages filter</span>
         </a>
     </li>
 
+    @endcan
 
 
 
