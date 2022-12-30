@@ -58,7 +58,7 @@
 
         <li
         class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
-        <a href="/dashboard/messages" class='sidebar-link'>
+        <a href="/dashboard/admin" class='sidebar-link'>
             <i class="bi bi-grid-fill"></i>
             <span>Messages filter</span>
         </a>

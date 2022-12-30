@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\DashboardController;
@@ -62,3 +63,5 @@ Route::get('/dashboard/messages/checkSlug', [DashboardMessagesController::class,
 Route::resource('/dashboard/messages', DashboardMessagesController::class)->middleware('auth');
 
 Route::post('/createcomment', [CommentsController::class, 'store']);
+
+Route::resource('/dashboard/admin', AdminController::class)->middleware('auth');
