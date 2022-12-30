@@ -81,8 +81,12 @@ class AdminController extends Controller
      * @param  \App\Models\Messages  $messages
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Messages $messages)
+    public function destroy(Messages $message)
     {
         //
+                   // destroy untuk mengahpus data
+                   Messages::destroy($message->id);
+                   return redirect('/dashboard/admin')->with('success', 'Aspirasimu sudah di hapus oleh admin!');
+
     }
 }

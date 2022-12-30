@@ -50,6 +50,11 @@
                   is-invalid
                 @enderror" name="password" id="password" placeholder="Password">
                 <label for="password">Password</label>
+                @error('password')
+                     <div class="invalid-feedback">
+                        {{ $message }}
+                     </div>
+                @enderror
               </div>
 
 
