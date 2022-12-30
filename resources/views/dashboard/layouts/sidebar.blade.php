@@ -49,18 +49,28 @@
 
 </ul>
 
-<h6 class="menu sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1
-      text-muted">
-          <span>Administrator</span>
-      </h6>
-      <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link {{ Request::is('dashboard/categories* ') ? 'active' : '' }} " href="/dashboard/categories">
-          <span data-feather="grid" class="align-text-bottom"></span>
-          Messages filter
+<ul class="menu">
+    <li class="sidebar-title">Administrator</li>
+
+        {{-- ngambil dari request parameter => URL --}}
+
+        {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
+
+        <li
+        class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
+        <a href="/dashboard/messages" class='sidebar-link'>
+            <i class="bi bi-grid-fill"></i>
+            <span>Messages filter</span>
         </a>
-      </li>
-      </ul>
+    </li>
+
+
+
+
+
+</ul>
+
+
 
 </div>
 </div>
