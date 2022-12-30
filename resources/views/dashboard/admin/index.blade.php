@@ -19,7 +19,8 @@
         <tr>
           <th scope="col">Id</th>
           <th scope="col">Title</th>
-          <th scope="col">Tags</th>
+          <th scope="col">User</th>
+          <th scope="col">Tag</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
@@ -32,6 +33,7 @@
             <td>{{ $loop->iteration }}</td>
 
             <td>{{ $msg->title }}</td>
+            <td>{{ $msg->users->name }}</td>
             <td>{{ $msg->categories->name }}</td>
             <td class="d-felx text-center">
 
