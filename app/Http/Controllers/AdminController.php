@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return 'khsus admin lur';
+        return view('dashboard.admin.index');
     }
 
     /**
