@@ -64,4 +64,4 @@ Route::resource('/dashboard/messages', DashboardMessagesController::class)->midd
 
 Route::post('/createcomment', [CommentsController::class, 'store']);
 
-Route::resource('/dashboard/admin', AdminController::class)->middleware('auth');
+Route::resource('/dashboard/admin', AdminController::class)->middleware('admin');
