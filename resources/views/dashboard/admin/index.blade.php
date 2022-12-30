@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">My Aspiration</h1>
+    <h1 class="h2">Aspiration filter</h1>
   </div>
 
 
@@ -13,7 +13,7 @@
   @endif
 
   <div class="table-responsive col-lg-8">
-    <a href="/dashboard/messages/create" class="btn btn-primary mb-3">Create new aspiration</a>
+    <p>Aspirasi ini di urutkan dari yang terakhir di input</p>
     <table class="table table-striped table-sm">
       <thead>
         <tr>
@@ -33,9 +33,7 @@
 
             <td>{{ $msg->title }}</td>
             <td>{{ $msg->categories->name }}</td>
-            <td>
-                <a href="/dashboard/messages/{{ $msg->slug }}" class="badge bg-info" ><span data-feather='eye' ></span></a>
-                <a href="/dashboard/messages/{{ $msg->slug }}/edit" class="badge bg-warning" ><span data-feather='edit' ></span></a>
+            <td class="d-felx text-center">
 
                 <form action="/dashboard/messages/{{ $msg->slug }}" class="d-inline" method="post">
                     @method('delete')
