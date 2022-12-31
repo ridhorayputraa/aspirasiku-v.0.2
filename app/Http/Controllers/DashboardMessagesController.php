@@ -141,6 +141,7 @@ class DashboardMessagesController extends Controller
         //
            // destroy untuk mengahpus data
            Messages::destroy($message->id);
+// return dd($message);
         return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di hapus!');
 
     }

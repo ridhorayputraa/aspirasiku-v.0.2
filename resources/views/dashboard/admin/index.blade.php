@@ -37,7 +37,10 @@
             <td>{{ $msg->categories->name }}</td>
             <td class="d-felx text-center">
 
-                <form action="/dashboard/admin/{{ $msg->slug }}" class="d-inline" method="post">
+                <a href="/dashboard/messages/{{ $msg->slug }}" class="badge bg-info" ><span data-feather='eye' ></span></a>
+                <a href="/dashboard/messages/{{ $msg->slug }}/edit" class="badge bg-warning" ><span data-feather='edit' ></span></a>
+
+                <form action="/dashboard/messages/{{ $msg->slug}}" class="d-inline" method="post">
                     @method('delete')
                 @csrf
                 <button  class="badge bg-danger border-0" onclick="return confirm('Are you sure?')" ><span data-feather='x-circle' ></span></button>

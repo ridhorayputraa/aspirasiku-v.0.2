@@ -8,7 +8,7 @@
   {{-- form --}}
   <div class="col-lg-8">
 
-      <form method="post" class="mb-5" action="/dashboard/messages/{{ $message->slug }}">
+      <form method="post" class="mb-5" action="/dashboard/message/{{ $message->slug }}">
       {{-- Method default routes edit --}}
       @method('put')
         @csrf
@@ -75,7 +75,7 @@
 
     title.addEventListener('change', function(){
         console.log(slug.value)
-        fetch('/dashboard/messages/checkSlug?title=' + title.value)
+        fetch('/dashboard/message/checkSlug?title=' + title.value)
         .then(response => response.json())
         .then(data => slug.value = data.slug)
     })

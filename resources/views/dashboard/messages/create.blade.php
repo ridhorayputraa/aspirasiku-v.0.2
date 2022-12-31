@@ -8,7 +8,7 @@
   {{-- form --}}
   <div class="col-lg-8">
 
-      <form method="post" class="mb-5" action="/dashboard/messages">
+      <form method="post" class="mb-5" action="/dashboard/message">
         @csrf
         {{-- akan langung ke method source --}}
         <div class="mb-3">
@@ -73,7 +73,7 @@
 
     title.addEventListener('change', function(){
         console.log(slug.value)
-        fetch('/dashboard/messages/checkSlug?title=' + title.value)
+        fetch('/dashboard/message/checkSlug?title=' + title.value)
         .then(response => response.json())
         .then(data => slug.value = data.slug)
     })

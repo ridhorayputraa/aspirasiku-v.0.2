@@ -36,8 +36,8 @@
         {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
 
         <li
-        class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
-        <a href="/dashboard/messages" class='sidebar-link'>
+        class="sidebar-item {{ Request::is('dashboard/message*') ? 'active' : '' }} ">
+        <a href="/dashboard/message" class='sidebar-link'>
             <i class="bi bi-file-text"></i>
             <span>My Aspiration</span>
         </a>
@@ -49,7 +49,7 @@
 
 </ul>
 
-@can('admin')
+{{-- @can('admin') --}}
 
 <ul class="menu">
     <li class="sidebar-title">Administrator</li>
@@ -59,14 +59,14 @@
     {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
 
     <li
-    class="sidebar-item {{ Request::is('dashboard/admin*') ? 'active' : '' }} ">
-        <a href="/dashboard/admin" class='sidebar-link'>
+    class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
+        <a href="/dashboard/messages" class='sidebar-link'>
             <i class="bi bi-person-lines-fill"></i>
             <span>Messages filter</span>
         </a>
     </li>
 
-    @endcan
+    {{-- @endcan --}}
 
 
 

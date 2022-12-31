@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Messages;
 use Illuminate\Http\Request;
-use \Cviebrock\EloquentSluggable\Services\SlugService;
-use Illuminate\Support\Str;
-class AdminController extends Controller
+
+class AdminControllers extends Controller
 {
     /**
      * Display a listing of the resource.

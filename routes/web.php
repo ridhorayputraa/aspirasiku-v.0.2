@@ -1,16 +1,16 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\AdminControllers;
+// use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CommentsController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardMessagesController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\Users;
+// use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
-use App\Models\Messages;
+// use App\Models\Messages;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,7 +44,7 @@ Route::get('/dashboard', function(){
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/{categories:slug}', [CategoryController::class, 'show']);
+// Route::get('/{categories:slug}', [CategoryController::class, 'show']);
 Route::get('/author/{users:username}', [UsersController::class, 'show']);
 
 // cari slug yang slug nya samaa dengan parameter
@@ -56,12 +56,12 @@ Route::get('/author/{users:username}', [UsersController::class, 'show']);
 
 
 // Untuk fetch Slug
-Route::get('/dashboard/messages/checkSlug', [DashboardMessagesController::class, 'checkSlug'])->middleware('auth');
+Route::get('/dashboard/message/checkSlug', [DashboardMessagesController::class, 'checkSlug'])->middleware('auth');
 
 
 // Routes Resource for CRUD
-Route::resource('/dashboard/messages', DashboardMessagesController::class)->middleware('auth');
+Route::resource('/dashboard/message', DashboardMessagesController::class)->middleware('auth');
 
 Route::post('/createcomment', [CommentsController::class, 'store']);
 
-Route::resource('/dashboard/admin', AdminController::class)->middleware('admin');
+Route::resource('/dashboard/messages', AdminController::class)->middleware('admin');
