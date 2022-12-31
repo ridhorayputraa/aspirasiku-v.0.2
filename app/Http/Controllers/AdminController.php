@@ -88,9 +88,9 @@ class AdminController extends Controller
     {
         //
                    // destroy untuk mengahpus data
-                //    Messages::destroy($message->id);
-                   return dd($message);
-                //    return redirect('/dashboard/admin')->with('success', 'Aspirasimu sudah di hapus oleh admin!');
+                   Messages::destroy($message->id);
+                //    return dd($message);
+                   return redirect('/dashboard/admin/messages')->with('success', 'Aspirasimu sudah di hapus oleh admin!');
 
     }
 }
