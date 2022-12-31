@@ -63,7 +63,7 @@ class DashboardMessagesController extends Controller
 
         Messages::create($validated);
 
-        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di tambahkan!');
+        return redirect('/dashboard/message')->with('success', 'Aspirasimu sudah di tambahkan!');
 
 
     }
@@ -126,7 +126,7 @@ class DashboardMessagesController extends Controller
 
 
 
-        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di Edit!');
+        return redirect('/dashboard/message')->with('success', 'Aspirasimu sudah di Edit!');
 
     }
 
@@ -142,7 +142,7 @@ class DashboardMessagesController extends Controller
            // destroy untuk mengahpus data
            Messages::destroy($message->id);
 // return dd($message);
-        return redirect('/dashboard/messages')->with('success', 'Aspirasimu sudah di hapus!');
+        return redirect('/dashboard/message')->with('success', 'Aspirasimu sudah di hapus!');
 
     }
 

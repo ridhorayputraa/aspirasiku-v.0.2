@@ -10,12 +10,12 @@
 
     <h1 class="mb-3 mt-3">{{ $message->title }}</h1>
 
-<a href="/dashboard/messages" class="btn btn-success"  ><span data-feather="arrow-left"></span> Back to all my aspiration</a>
+<a href="/dashboard/message" class="btn btn-success"  ><span data-feather="arrow-left"></span> Back to all my aspiration</a>
 {{-- edit --}}
-<a href="/dashboard/messages/{{ $message->slug }}/edit" class="btn btn-warning"  ><span data-feather="edit"></span>Edit</a>
+<a href="/dashboard/message/{{ $message->slug }}/edit" class="btn btn-warning"  ><span data-feather="edit"></span>Edit</a>
 
 
-<form action="/dashboard/messages/{{ $message->slug }}" class="d-inline" method="post">
+<form action="/dashboard/message/{{ $message->slug }}" class="d-inline" method="post">
     @method('delete')
 @csrf
 <button  class="btn btn-danger" onclick="return confirm('Are you sure?')" >Delete<span data-feather='x-circle' ></span></button>

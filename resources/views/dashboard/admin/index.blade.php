@@ -37,8 +37,8 @@
             <td>{{ $msg->categories->name }}</td>
             <td class="d-felx text-center">
 
-          
-                <form action="/dashboard/messages/{{ $msg->slug}}" class="d-inline" method="post">
+
+                <form action="/dashboard/admin/messages/{{ $msg->slug}}" class="d-inline" method="post">
                     @method('delete')
                 @csrf
                 <button  class="badge bg-danger border-0" onclick="return confirm('Are you sure?')" ><span data-feather='x-circle' ></span></button>

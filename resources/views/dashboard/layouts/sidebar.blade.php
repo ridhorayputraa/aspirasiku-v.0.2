@@ -49,7 +49,7 @@
 
 </ul>
 
-{{-- @can('admin') --}}
+@can('admin')
 
 <ul class="menu">
     <li class="sidebar-title">Administrator</li>
@@ -59,14 +59,14 @@
     {{-- {{ Request::is('dashboard/messages') ? 'active' : '' }}  --}}
 
     <li
-    class="sidebar-item {{ Request::is('dashboard/messages*') ? 'active' : '' }} ">
-        <a href="/dashboard/messages" class='sidebar-link'>
+    class="sidebar-item {{ Request::is('dashboard/admin/messages') ? 'active' : '' }} ">
+        <a href="/dashboard/admin/messages" class='sidebar-link'>
             <i class="bi bi-person-lines-fill"></i>
             <span>Messages filter</span>
         </a>
     </li>
 
-    {{-- @endcan --}}
+    @endcan
 
 
 
