@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
 
         Users::factory(3)->create();
 
-        Messages::factory(20)->create();
+        Messages::factory(10)->create();
 
-        Comments::factory(50)->create();
+        Comments::factory(15)->create();
 
 
         Categories::create([

@@ -14,7 +14,7 @@ class CommentsFactory extends Factory
     public function definition()
     {
         return [
-             'body' => $this->faker->sentence(mt_rand(2,8)),
+             'body' => 'Ini adalah contoh komentar',
              'messages_id' => mt_rand(1,20),
              'users_id' => mt_rand(1,3)
         ];
