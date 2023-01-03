@@ -54,7 +54,7 @@
                 </div>
             </form>
 
-            <a class="btn btn-secondary my-2" href="/dashboard/messages/create">Create Aspiration!</a>
+            <a class="btn btn-secondary my-2" href="/dashboard/message/create">Create Aspiration!</a>
 
             {{-- tags --}}
               @include('partials.tags')
