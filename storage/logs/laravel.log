@@ -1,0 +1,53 @@
+[2023-01-01 18:13:36] local.ERROR: include(E:\Project\Web\Aspirasiku -Blog\Aspirasiku2\aspirasiku hosting\aspirasiku\vendor\composer/../itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer/../itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkServiceProvider.php): failed to open stream: No such file or directory at E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(E:\\\\Proj...', 'E:\\\\Project\\\\Web\\\\...', 571, Array)
+#1 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): include()
+#2 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Project\\\\Web\\\\...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Clockwork\\\\Suppo...')
+#4 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(745): spl_autoload_call('Clockwork\\\\Suppo...')
+#5 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(679): Illuminate\\Foundation\\Application->resolveProvider('Clockwork\\\\Suppo...')
+#6 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('Clockwork\\\\Suppo...')
+#7 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(659): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#8 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#9 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2023-01-01 18:13:36] local.ERROR: include(E:\Project\Web\Aspirasiku -Blog\Aspirasiku2\aspirasiku hosting\aspirasiku\vendor\composer/../itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer/../itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkServiceProvider.php): failed to open stream: No such file or directory at E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(E:\\\\Proj...', 'E:\\\\Project\\\\Web\\\\...', 571, Array)
+#1 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): include()
+#2 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Project\\\\Web\\\\...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Clockwork\\\\Suppo...')
+#4 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(745): spl_autoload_call('Clockwork\\\\Suppo...')
+#5 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(679): Illuminate\\Foundation\\Application->resolveProvider('Clockwork\\\\Suppo...')
+#6 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('Clockwork\\\\Suppo...')
+#7 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(659): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#8 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#9 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2023-01-01 18:13:53] local.ERROR: include(E:\Project\Web\Aspirasiku -Blog\Aspirasiku2\aspirasiku hosting\aspirasiku\vendor\itsgoingd\clockwork\Clockwork\Support\Laravel\ClockworkServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\itsgoingd\\clockwork\\Clockwork\\Support\\Laravel\\ClockworkServiceProvider.php): failed to open stream: No such file or directory at E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(E:\\\\Proj...', 'E:\\\\Project\\\\Web\\\\...', 571, Array)
+#1 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(571): include()
+#2 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Project\\\\Web\\\\...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Clockwork\\\\Suppo...')
+#4 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(745): spl_autoload_call('Clockwork\\\\Suppo...')
+#5 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(679): Illuminate\\Foundation\\Application->resolveProvider('Clockwork\\\\Suppo...')
+#6 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('Clockwork\\\\Suppo...')
+#7 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(659): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#8 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#9 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#12 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#13 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#14 E:\\Project\\Web\\Aspirasiku -Blog\\Aspirasiku2\\aspirasiku hosting\\aspirasiku\\server.php(21): require_once('E:\\\\Project\\\\Web\\\\...')
+#15 {main}
+"} 
